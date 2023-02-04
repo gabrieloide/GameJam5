@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
@@ -40,4 +40,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Lhand
+    uniqueID: 3499607739
+    locked: 0
+  - name: Lfoot
+    uniqueID: 40843667
+    locked: 0
+  - name: Body
+    uniqueID: 2517906307
+    locked: 0
+  - name: Rfoot
+    uniqueID: 4181348603
+    locked: 0
+  - name: Rhand
+    uniqueID: 351961593
+    locked: 0
+  - name: Head
+    uniqueID: 964166055
+    locked: 0
+  - name: Hair
+    uniqueID: 627211309
     locked: 0
