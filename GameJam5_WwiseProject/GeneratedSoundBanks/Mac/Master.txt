@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3187507146	Play_Test			\Default Work Unit\Music\Play_Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	439444282	Mario_test	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\Mario_test_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Test\Mario_test		29929840
+
