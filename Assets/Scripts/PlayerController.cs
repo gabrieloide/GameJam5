@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public bool canMoveBox;
     public GameObject Bullet;
     public Transform bulletCreation;
+    bool canPass;
+
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
@@ -93,12 +95,20 @@ public class PlayerController : MonoBehaviour
         {
             canMoveBox = true;
         }
+        if (collision.gameObject.CompareTag("Hole"))
+        {
+            canPass = true;
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Activator"))
         {
             canMoveBox = false;
+        }
+        if (collision.gameObject.CompareTag("Hole"))
+        {
+            canPass = false;
         }
     }
 }

@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 8211382406126547110}
   m_Layer: 0
   m_Name: PlayerDad
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -756,6 +756,9 @@ MonoBehaviour:
   fowards: {fileID: 21300000, guid: 783a85128286a78439ea2806b070339b, type: 3}
   Backwards: {fileID: 21300000, guid: 1dab5733881dfca42b10c6ca74b49c72, type: 3}
   LastPosition: {x: 0, y: 0, z: 0}
+  canMoveBox: 0
+  Bullet: {fileID: 0}
+  bulletCreation: {fileID: 0}
 --- !u!54 &8211382406126547112
 Rigidbody:
   m_ObjectHideFlags: 0
