@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e569f596b9e54614283e9b8553f420af, type: 3}
+  m_Name: 2C92A90D-5040-4491-A622-FFB4D5BA83E4
+  m_EditorClassIdentifier: 
+  objectName: Room_soudfloor
+  id: 2340669000
+  guid: 2C92A90D-5040-4491-A622-FFB4D5BA83E4

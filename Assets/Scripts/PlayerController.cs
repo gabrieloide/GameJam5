@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public Transform bulletCreation;
     public bool canPass;
 
+
+
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
@@ -142,4 +144,6 @@ public class PlayerController : MonoBehaviour
             
         }
     }
+
+
 }

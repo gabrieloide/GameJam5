@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{55C10592-8E9A-7093-6A84-D9905FADFC8C}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C11D49D8-769E-A6A5-1075-847464E16239}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -45,6 +45,10 @@
 				<File Id="346742794" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="425850747" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ.wav</ShortName>
+					<CachePath>SFX/AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ_10C4C929.wem</CachePath>
 				</File>
 				<File Id="432825748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG.wav</ShortName>
@@ -76,6 +80,7 @@
 				<Event Id="2340669000" Name="Room_soudfloor" DurationType="OneShot" DurationMin="100.97" DurationMax="100.97">
 					<MediaRefs>
 						<MediaRef Id="225487845"/>
+						<MediaRef Id="425850747"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3234882844" Name="Step_Grass" DurationType="OneShot" DurationMin="0.30859724" DurationMax="0.47207606">
@@ -90,12 +95,16 @@
 					<MediaRefs>
 						<MediaRef Id="48862275"/>
 						<MediaRef Id="55381464"/>
+						<MediaRef Id="184986566"/>
+						<MediaRef Id="346742794"/>
+						<MediaRef Id="432825748"/>
 						<MediaRef Id="473235942"/>
 						<MediaRef Id="684661010"/>
+						<MediaRef Id="857408860"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A9DD9552-EA8D-00C2-5315-D5E3BDF1D6B5}</FileHash>
+	<FileHash>{BB8991C2-3495-E86C-C78E-20C961B0D4B3}</FileHash>
 </SoundBanksInfo>

@@ -30,6 +30,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{255D4FB1-BC5A-4D61-AA7F-D2BCC358C9EE}" ShortID="518355216">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grass_step" ID="{A1B6F26C-32ED-4ACA-84F3-9C5F59A50FB2}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -68,6 +75,13 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Soundfloor2" ID="{91D5051D-2966-44CD-BD8B-B84BEE28A6F5}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9DFADA08-FA10-4377-AFE6-C6DE5BF658CE}" ShortID="876975693">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soundfloor3" ID="{C4E51D7D-85FC-43DF-9595-71F24C7BD6FE}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -40,6 +40,11 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-21</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -154,6 +159,11 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="wood_step" ID="{EE51332A-2EBB-4AF7-9B11-60F458BF4C97}" ShortID="898631431">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>37</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -166,6 +176,11 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-18</Value>
+													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -463,6 +478,28 @@
 														<ActiveSource Name="AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP" ID="{E1B8C8DD-18D4-4E85-9C74-6BD34F40266B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="Soundfloor3" ID="{C4E51D7D-85FC-43DF-9595-71F24C7BD6FE}" ShortID="673321324">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ" ID="{4F0DDBBC-1DA4-467F-A5A4-A661843FC8A6}">
+															<Language>SFX</Language>
+															<AudioFile>AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="425850747"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ" ID="{4F0DDBBC-1DA4-467F-A5A4-A661843FC8A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</Folder>
 									</ChildrenList>
@@ -482,6 +519,30 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Door_Open" ID="{9464F733-889C-40AB-9519-178EE5686BB3}" ShortID="605623838">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DOORGate_Miscellaneous-Fence Gate Wood Close 03_AKB00M_Doors" ID="{D0EC52CA-2C9D-4D0D-82CA-494153DDC6F5}">
+											<Language>SFX</Language>
+											<AudioFile>DOORGate_Miscellaneous-Fence Gate Wood Close 03_AKB00M_Doors.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="207588672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DOORGate_Miscellaneous-Fence Gate Wood Close 03_AKB00M_Doors" ID="{D0EC52CA-2C9D-4D0D-82CA-494153DDC6F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Button" ID="{C90980ED-F6DC-4BA5-8D04-97EFB02CCAD4}" ShortID="297057575">
 							<ReferenceList>
@@ -492,6 +553,30 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Button_press" ID="{3389CE3B-489F-4474-85CD-7651F75D627C}" ShortID="789442743">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl" ID="{1A7EC051-B97F-4258-8598-BFCBDEB97261}">
+											<Language>SFX</Language>
+											<AudioFile>DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="401277444"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl" ID="{1A7EC051-B97F-4258-8598-BFCBDEB97261}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Torch" ID="{AC109F97-37AC-43DE-A350-0771B5D665A2}" ShortID="791207079">
 							<ReferenceList>
@@ -502,6 +587,30 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Torch" ID="{E25774CE-5646-49E6-A4B1-989340FB891C}" ShortID="443544167">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FIREBurn_Torch Fire_PSE_OE_lDy8p" ID="{286D1CD7-F555-4822-8F08-C605021A283B}">
+											<Language>SFX</Language>
+											<AudioFile>FIREBurn_Torch Fire_PSE_OE_lDy8p.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="254577660"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FIREBurn_Torch Fire_PSE_OE_lDy8p" ID="{286D1CD7-F555-4822-8F08-C605021A283B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>
