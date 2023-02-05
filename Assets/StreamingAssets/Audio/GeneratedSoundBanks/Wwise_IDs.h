@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_TEST = 3187507146U;
+        static const AkUniqueID OVERWORLD_SOUDFLOOR = 3572051233U;
+        static const AkUniqueID ROOM_SOUDFLOOR = 2340669000U;
+        static const AkUniqueID STEP_GRASS = 3234882844U;
+        static const AkUniqueID STEP_WOOD = 1041114565U;
     } // namespace EVENTS
 
     namespace BANKS
