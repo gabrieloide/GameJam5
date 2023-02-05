@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3091138894664623842}
   - component: {fileID: 9046186733958532102}
   - component: {fileID: 172547212724422972}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Torus_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3581136144857372000}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DartBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 9086805109588551886}
   - component: {fileID: 693972829113055607}
   - component: {fileID: 5937664053158364226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 8170128555190086200}
   - component: {fileID: 3963214607993386021}
   - component: {fileID: 7024198295765281764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Torus_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

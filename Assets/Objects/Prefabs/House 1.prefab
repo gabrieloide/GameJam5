@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7273243647385752737}
   - component: {fileID: 4752932733396000785}
   - component: {fileID: 345436977767799389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8824126279019055608}
   - component: {fileID: 1728021940417135254}
   - component: {fileID: 7692127709002197438}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pyramid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8371749813620113392}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: House 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

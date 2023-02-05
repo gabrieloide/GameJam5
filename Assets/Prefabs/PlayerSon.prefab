@@ -291,7 +291,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981432821387662679}
-  m_LocalRotation: {x: 0.21614994, y: 0, z: 0, w: 0.9763602}
+  m_LocalRotation: {x: 0.08747049, y: -0.04895385, z: -0.6467682, w: 0.75607103}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -303,7 +303,7 @@ Transform:
   - {fileID: 1981432821354868552}
   m_Father: {fileID: 1981432822115374887}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 24.966, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.953, y: -10.814, z: -81.464}
 --- !u!212 &1981432821387662677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -431,14 +431,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981432821852858938}
-  m_LocalRotation: {x: -0, y: -0, z: -0.81899065, w: 0.57380694}
+  m_LocalRotation: {x: -0.15593661, y: 0.10925287, z: -0.4962717, w: 0.84703124}
   m_LocalPosition: {x: 0.019, y: 0.038, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1981432821387662676}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -109.968}
+  m_LocalEulerAnglesHint: {x: -8.959, y: 20.124, z: -62.325}
 --- !u!212 &1981432821852858936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -765,14 +765,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981432822598578039}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7947004, w: 0.607002}
+  m_LocalRotation: {x: -0.03914994, y: 0.05308932, z: 0.38207394, w: 0.92177457}
   m_LocalPosition: {x: -0.049, y: 0.045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1981432821387662676}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -105.254}
+  m_LocalEulerAnglesHint: {x: -6.473, y: 3.922, z: 44.806}
 --- !u!212 &1981432822598578037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -811,8 +811,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 627211309
-  m_SortingLayer: 7
+  m_SortingLayerID: -795359557
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 87537ce960d537649aac42823e58d5ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

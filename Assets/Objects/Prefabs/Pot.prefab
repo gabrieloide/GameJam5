@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2629997428181214468}
   - component: {fileID: 4046699272672363143}
   - component: {fileID: 295008992135911064}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1987830902400461223}
   - component: {fileID: 7795058236065527838}
   - component: {fileID: 4029087007769167147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6070325560921052169}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

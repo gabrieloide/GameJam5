@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2328127835845868083}
   - component: {fileID: 3895037498827987015}
   - component: {fileID: 2271509513606272733}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3295614851749546534}
   - component: {fileID: 4721312112941276836}
   - component: {fileID: 6918279166455819411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8934903178129885161}
   - component: {fileID: 7083888244155727016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Temple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
