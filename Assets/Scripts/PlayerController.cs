@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody theRB;
     public float moveSpeed, jumpForce;
-    private Vector2 moveInput;
+    public Vector2 moveInput;
     public LayerMask whatIsGround;
     public Transform groundPoint;
     private bool isGrounded;

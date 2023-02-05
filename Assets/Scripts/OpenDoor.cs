@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenDoor : MonoBehaviour
 {
     public bool openDoor;
+    public string NextLevel;
     private void Update()
     {
         if (openDoor && GameManager.instance.hasKey)
         {
-            Debug.Log("Change Leve");
+            SceneManager.LoadScene(NextLevel);
         }
     }
     private void OnCollisionEnter(Collision collision)

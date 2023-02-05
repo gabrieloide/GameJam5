@@ -21,6 +21,9 @@ public class CreateKey : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        canGiveKey = false;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            canGiveKey = false;
+        }
     }
 }
