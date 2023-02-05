@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
+        moveInput.Normalize();
         LastPosition = transform.position;
         anim.SetFloat("moveSpeed", theRB.velocity.magnitude);
 
@@ -40,10 +41,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (true)
-        {
-            theRB.velocity = new Vector3(moveInput.x, theRB.velocity.y, moveInput.y).normalized * moveSpeed * Time.fixedDeltaTime;
-        }
+        theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
     }
 
 }

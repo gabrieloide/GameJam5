@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 593144835447901847}
-  moveSpeed: 150
+  moveSpeed: 4
   jumpForce: 4.5
   whatIsGround:
     serializedVersion: 2
@@ -702,7 +702,7 @@ MonoBehaviour:
   show: {fileID: 593144835727103038}
   fowards: {fileID: 21300000, guid: 783a85128286a78439ea2806b070339b, type: 3}
   Backwards: {fileID: 21300000, guid: 1dab5733881dfca42b10c6ca74b49c72, type: 3}
-  canMove: 0
+  LastPosition: {x: 0, y: 0, z: 0}
 --- !u!54 &593144835447901847
 Rigidbody:
   m_ObjectHideFlags: 0
