@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 751871947568327629}
   - component: {fileID: 4449824816721765480}
   - component: {fileID: 1883634194123051170}
+  - component: {fileID: -8909055841743563321}
   m_Layer: 3
   m_Name: StairFront
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-8909055841743563321
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82471214254420343}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6525949916285243375, guid: ef51bb23b835b0b4a816ee43b456d9cd, type: 3}
