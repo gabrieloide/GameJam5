@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
 {
-    [HideInInspector]public int buttonCountPressed;
+    public int buttonCountPressed;
     [SerializeField]int AmountToOpen;
-
+    [SerializeField] GameObject activate;
+    private void Update()
+    {
+        ActivateDoor();
+    }
     void ActivateDoor()
     {
         if (buttonCountPressed == AmountToOpen)
         {
             //Activar algo
-            Debug.Log("Abriendo puerta");
+            activate.SetActive(true);
+        }
+        else
+        {
+            activate.SetActive(false);
         }
     }
 }
