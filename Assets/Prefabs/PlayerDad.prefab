@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8211382404931049654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.144, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRB: {fileID: 8211382406126547112}
   moveSpeed: 4
-  jumpForce: 4.5
+  jumpForce: 3.8
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
