@@ -19,7 +19,7 @@ public class ButtonsBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Activator"))
         {
             isPushing = true;
-            buttonManager.buttonCountPressed++;
+            buttonManager.buttonCountPressed = 1;
             animator.SetBool("Pushing", isPushing);
         }
     }
@@ -27,7 +27,7 @@ public class ButtonsBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Activator"))
         {
-            buttonManager.buttonCountPressed--;
+            buttonManager.buttonCountPressed = 0;
             isPushing = false;
             animator.SetBool("Pushing", isPushing);
         }

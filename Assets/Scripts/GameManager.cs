@@ -10,6 +10,7 @@ public enum FamilyState
 }
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
     PlayerController playerController;
     public FamilyState familyState = FamilyState.Dad;
     Dictionary<int, FamilyState> tableFamily = new Dictionary<int, FamilyState>();
@@ -18,6 +19,10 @@ public class GameManager : MonoBehaviour
     public int indexFamilyState;
     private void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
         playerController = FindObjectOfType<PlayerController>();
         currentPlayer = Instantiate(Players[indexFamilyState], transform.position, Quaternion.identity);
         tableFamily.Add(0, FamilyState.Dad );
