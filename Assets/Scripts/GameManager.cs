@@ -18,7 +18,12 @@ public class GameManager : MonoBehaviour
     public GameObject currentPlayer;
     public int indexFamilyState;
     public bool hasKey;
+    public Transform StartPosLevel;
 
+    private void Awake()
+    {
+        currentPlayer = Instantiate(Players[indexFamilyState], StartPosLevel.position, Quaternion.identity);
+    }
     private void Start()
     {
         if (instance == null)
@@ -26,7 +31,6 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
         playerController = FindObjectOfType<PlayerController>();
-        currentPlayer = Instantiate(Players[indexFamilyState], transform.position, Quaternion.identity);
         tableFamily.Add(0, FamilyState.Dad );
         tableFamily.Add(1,FamilyState.Mom );
         tableFamily.Add(2,FamilyState.Son );
