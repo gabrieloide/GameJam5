@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] Players;
     public GameObject currentPlayer;
     public int indexFamilyState;
+    public bool hasKey;
+
     private void Start()
     {
         if (instance == null)
