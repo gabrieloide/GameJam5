@@ -16,7 +16,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Jump" ID="{95993654-3386-47F1-B49D-98FA45879B3B}"/>
+						<Event Name="Jump" ID="{95993654-3386-47F1-B49D-98FA45879B3B}">
+							<ChildrenList>
+								<Action Name="" ID="{5D06BA8E-268D-44DC-8D5E-D76C67E2E3BC}" ShortID="43738780">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="jump" ID="{501AC466-B4F0-49C0-A2F8-D88F771C59A2}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="PickUpObject" ID="{1FB31670-C235-4633-9370-E0A895954ED4}"/>
 						<Event Name="Throw" ID="{4FAB9F03-446B-4198-B961-7BA74F8E2FEA}"/>
 						<Event Name="Push" ID="{CDADCBBF-203E-41EA-815D-8BB5559575FC}"/>
@@ -45,13 +55,48 @@
 					<ChildrenList>
 						<Folder Name="Button" ID="{0D76AAB3-DD89-4867-9EEA-4D3A26851D3E}" ShortID="170811410">
 							<ChildrenList>
-								<Event Name="Button_press" ID="{613C63F7-8040-4BF8-A2F6-CEAA2932A432}"/>
+								<Event Name="Button_press" ID="{613C63F7-8040-4BF8-A2F6-CEAA2932A432}">
+									<ChildrenList>
+										<Action Name="" ID="{01C2BA9F-0A1B-4379-BF42-83D0EEC0E41D}" ShortID="1070371705">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Button_press" ID="{3389CE3B-489F-4474-85CD-7651F75D627C}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="Button_release" ID="{8C479C75-3AC1-4F8D-9884-64F9531C7570}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Fire" ID="{B46DB65E-8129-4AE3-B2F7-A690536EF179}" ShortID="361378316">
 							<ChildrenList>
-								<Event Name="Torch" ID="{8670C1D8-8730-45CD-A232-B5A910FD0973}"/>
+								<Event Name="Torch" ID="{8670C1D8-8730-45CD-A232-B5A910FD0973}">
+									<ChildrenList>
+										<Action Name="" ID="{37EB3A1F-B8FF-4C90-9CD0-676FBB3ED026}" ShortID="1048671427">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Torch" ID="{E25774CE-5646-49E6-A4B1-989340FB891C}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Door" ID="{207FF86C-B5CC-4CBE-9215-281CA1E65A99}" ShortID="504934200">
+							<ChildrenList>
+								<Event Name="Door_Open" ID="{FA89F6B9-F00C-449A-AC31-B00590462345}">
+									<ChildrenList>
+										<Action Name="" ID="{59B35D9F-81C1-4332-96FB-F307C3E84D5E}" ShortID="934253611">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_Open" ID="{9464F733-889C-40AB-9519-178EE5686BB3}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

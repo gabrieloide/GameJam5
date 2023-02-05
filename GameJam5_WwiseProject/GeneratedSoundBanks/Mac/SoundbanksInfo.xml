@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C11D49D8-769E-A6A5-1075-847464E16239}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C138A488-D81D-4660-D3FE-EF05F2B62A64}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -34,17 +34,33 @@
 					<ShortName>FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(4).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(4)_10C4C929.wem</CachePath>
 				</File>
+				<File Id="144402165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>uin.wav</ShortName>
+					<CachePath>SFX/uin_7B2924E9.wem</CachePath>
+				</File>
 				<File Id="184986566" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(3).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(3)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="207588672" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DOORGate_Miscellaneous-Fence Gate Wood Close 03_AKB00M_Doors.wav</ShortName>
+					<CachePath>SFX/DOORGate_Miscellaneous-Fence Gate Wood Close 03_AKB00M_Doors_10C4C929.wem</CachePath>
 				</File>
 				<File Id="225487845" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP.wav</ShortName>
 					<CachePath>SFX/AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP_10C4C929.wem</CachePath>
 				</File>
+				<File Id="254577660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FIREBurn_Torch Fire_PSE_OE_lDy8p.wav</ShortName>
+					<CachePath>SFX/FIREBurn_Torch Fire_PSE_OE_lDy8p_10C4C929.wem</CachePath>
+				</File>
 				<File Id="346742794" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="401277444" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl.wav</ShortName>
+					<CachePath>SFX/DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl_10C4C929.wem</CachePath>
 				</File>
 				<File Id="425850747" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ.wav</ShortName>
@@ -70,8 +86,32 @@
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(4).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(4)_10C4C929.wem</CachePath>
 				</File>
+				<File Id="866623255" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSCInst_Gong No Hit_PSE_OE_0gaDU.wav</ShortName>
+					<CachePath>SFX/MUSCInst_Gong No Hit_PSE_OE_0gaDU_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="2698747613" Name="Button_press" DurationType="OneShot" DurationMin="0.48966667" DurationMax="0.48966667">
+					<MediaRefs>
+						<MediaRef Id="401277444"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="535830432" Name="Door_Open" DurationType="OneShot" DurationMin="1.9913541" DurationMax="1.9913541">
+					<MediaRefs>
+						<MediaRef Id="207588672"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="685410454" Name="Gong" DurationType="OneShot" DurationMin="8.63175" DurationMax="8.63175">
+					<MediaRefs>
+						<MediaRef Id="866623255"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.68001616" DurationMax="0.8972867">
+					<MediaRefs>
+						<MediaRef Id="144402165"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3572051233" Name="Overworld_soudfloor" DurationType="OneShot" DurationMin="70.55" DurationMax="70.55">
 					<MediaRefs>
 						<MediaRef Id="824042659"/>
@@ -103,8 +143,13 @@
 						<MediaRef Id="857408860"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1904864137" Name="Torch" DurationType="OneShot" DurationMin="62.304" DurationMax="62.304">
+					<MediaRefs>
+						<MediaRef Id="254577660"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB8991C2-3495-E86C-C78E-20C961B0D4B3}</FileHash>
+	<FileHash>{7DAA1C5A-2423-0941-3B11-7D35C59D17C3}</FileHash>
 </SoundBanksInfo>

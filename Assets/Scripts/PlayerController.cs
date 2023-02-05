@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public GameObject Bullet;
     public Transform bulletCreation;
     public bool canPass;
-
+    public AK.Wwise.Event Jump;
 
 
     void Update()
@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             theRB.velocity += new Vector3(0f, jumpForce, 0f);
+            Jump.Post(gameObject);
         }
 
         anim.SetBool("onGround", isGrounded);

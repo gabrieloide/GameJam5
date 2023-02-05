@@ -307,6 +307,21 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="jump" ID="{501AC466-B4F0-49C0-A2F8-D88F771C59A2}" ShortID="56808249">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{99FECBF3-7723-4EDC-91B4-E4DD5FAFB06C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="227"/>
+																	<Property Name="Min" Type="Real64" Value="-253"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
@@ -315,26 +330,24 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
 												</Reference>
 											</ReferenceList>
-										</Sound>
-										<Sound Name="jump_01" ID="{95EF0D8F-7109-4EAE-9468-D05C68879615}" ShortID="207637827">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
-												</Reference>
-											</ReferenceList>
-										</Sound>
-										<Sound Name="jump_02" ID="{055BA483-1552-48C9-94D4-2C36705569D6}" ShortID="920012542">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8E5BBB8-5DF8-46F7-B87C-B124E2FD99BE}"/>
-												</Reference>
-											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="uin" ID="{F58A0E72-FC1D-42EF-B203-F61B65377998}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.47047501506002"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.603003188316363"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.37829300186597"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>uin.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="144402165"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="uin" ID="{F58A0E72-FC1D-42EF-B203-F61B65377998}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
@@ -555,6 +568,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Button_press" ID="{3389CE3B-489F-4474-85CD-7651F75D627C}" ShortID="789442743">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
@@ -589,7 +609,30 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Torch" ID="{E25774CE-5646-49E6-A4B1-989340FB891C}" ShortID="443544167">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Torch" ID="{10CFE16E-7529-40E4-8270-7BCDD151A58D}" WorkUnitID="{9C393742-B94D-4215-A28F-4A97CA0B491C}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
 										</Reference>

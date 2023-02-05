@@ -6,9 +6,12 @@
 				<SoundBank Name="Master" ID="{78725E68-1E79-4C7B-904A-403DA986B606}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Room_soudfloor" ID="{2C92A90D-5040-4491-A622-FFB4D5BA83E4}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Door_Open" ID="{FA89F6B9-F00C-449A-AC31-B00590462345}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Torch" ID="{8670C1D8-8730-45CD-A232-B5A910FD0973}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Step_Grass" ID="{112859A4-30F0-48B3-8751-10B570EF31F3}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Step_Wood" ID="{5C53CC8B-4900-4A08-A3FB-A091DB04939C}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Overworld_soudfloor" ID="{525609C2-B660-4BE3-ACB9-FC9B5D5060EC}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Button_press" ID="{613C63F7-8040-4BF8-A2F6-CEAA2932A432}" WorkUnitID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

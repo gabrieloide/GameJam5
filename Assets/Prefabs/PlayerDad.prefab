@@ -777,6 +777,10 @@ MonoBehaviour:
   Bullet: {fileID: 0}
   bulletCreation: {fileID: 0}
   canPass: 0
+  Jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2530fdc2c9bab914a91ce6c540518c4a, type: 2}
 --- !u!54 &8211382406126547112
 Rigidbody:
   m_ObjectHideFlags: 0
