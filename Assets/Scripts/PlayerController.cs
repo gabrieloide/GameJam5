@@ -3,18 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum FamilyState
-{
-    Dad,
-    Mom,
-    Son
-}
+
 public class PlayerController : MonoBehaviour
 {
-    public FamilyState familyState = FamilyState.Dad;
-    public int indexFamilyState;
-    Dictionary<int,FamilyState> tableFamily = new Dictionary<int, FamilyState>();
-
     public Rigidbody theRB;
     public float moveSpeed, jumpForce;
     private Vector2 moveInput;
@@ -24,18 +15,12 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public SpriteRenderer show;
     public Sprite fowards, Backwards;
-    private void Start()
-    {
-        tableFamily.Add(0, FamilyState.Dad);
-        tableFamily.Add(1, FamilyState.Mom);
-        tableFamily.Add(2, FamilyState.Son);
-    }
+    public Vector3 LastPosition;
     void Update()
     {
-        ChangeFamilyMember();
-        moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveInput.Normalize();
-
+        moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
+        LastPosition = transform.position;
         anim.SetFloat("moveSpeed", theRB.velocity.magnitude);
 
         RaycastHit hit;
@@ -53,21 +38,12 @@ public class PlayerController : MonoBehaviour
         else
             show.sprite = fowards;
     }
-    private void FixedUpdate()=> theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
-    void ChangeFamilyMember()
+    private void FixedUpdate()
     {
         if (true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                indexFamilyState++;
-                familyState = tableFamily[indexFamilyState];
-            }
-            else if (Input.GetKeyDown(KeyCode.Q))
-            {
-                indexFamilyState--;
-                familyState = tableFamily[indexFamilyState];
-            }
+            theRB.velocity = new Vector3(moveInput.x, theRB.velocity.y, moveInput.y).normalized * moveSpeed * Time.fixedDeltaTime;
         }
     }
+
 }
