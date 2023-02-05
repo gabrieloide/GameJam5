@@ -9,10 +9,15 @@ public class CameraMovement : MonoBehaviour
     public float time;
     private void Start()
     {
-        PlayerPosition = GameObject.Find("PlayerDad");
+        PlayerPosition = GameObject.Find("CameraPosition");
     }
     private void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, GameManager.instance.currentPlayer.transform.position, time * Time.deltaTime);
+        transform.SetParent(PlayerPosition.transform);
+        if (FindObjectOfType<PlayerController>().moveInput.x > 0)
+        {
+            transform.localScale = new Vector3(-1,1,1);
+        }
+        
     }
 }

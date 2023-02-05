@@ -1,29 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenDoor : MonoBehaviour
 {
-    public bool openDoor;
-    private void Update()
-    {
-        if (openDoor && GameManager.instance.hasKey)
-        {
-            Debug.Log("Change Leve");
-        }
-    }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && GameManager.instance.hasKey)
         {
-            openDoor = true;
-        }
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            openDoor = false;
+            Destroy(gameObject);
         }
     }
 
