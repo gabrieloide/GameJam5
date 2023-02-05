@@ -255,12 +255,12 @@ SpriteRenderer:
   m_SortingLayerID: 964166055
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 783a85128286a78439ea2806b070339b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e9a61646cdf80542a39a04f41191dba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.47, y: 0.34}
+  m_Size: {x: 0.734375, y: 0.53125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -345,12 +345,12 @@ SpriteRenderer:
   m_SortingLayerID: -1777060989
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a05f4b4c92be0424cafe18f1c5957f4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b89412dde0ab081418b71305ba4310c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 0.34375, y: 0.34375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -612,6 +612,7 @@ MonoBehaviour:
   theRB: {fileID: 1981432822115374891}
   moveSpeed: 4
   jumpForce: 3.8
+  moveInput: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -625,6 +626,10 @@ MonoBehaviour:
   Bullet: {fileID: 6636738776079944033, guid: 8fa54200ed96f54499fb11fb1c8fe7df, type: 3}
   bulletCreation: {fileID: 7685056209221010730}
   canPass: 0
+  Jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!54 &1981432822115374891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -742,7 +747,7 @@ SpriteRenderer:
   m_Size: {x: 0.41, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1981432822598578039
