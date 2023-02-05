@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{99BF9E1D-67B2-4E5C-BF4D-3324FB126AD1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{DA2455FC-3325-4A16-B1C9-3B8C85EABB37}" ShortID="280038919">
+					<ChildrenList>
+						<Event Name="Step_Grass" ID="{112859A4-30F0-48B3-8751-10B570EF31F3}">
+							<ChildrenList>
+								<Action Name="" ID="{DEFF85E1-6E12-47C6-AA2B-22658742D4A1}" ShortID="425126832">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grass_step" ID="{A1B6F26C-32ED-4ACA-84F3-9C5F59A50FB2}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Jump" ID="{95993654-3386-47F1-B49D-98FA45879B3B}"/>
+						<Event Name="PickUpObject" ID="{1FB31670-C235-4633-9370-E0A895954ED4}"/>
+						<Event Name="Throw" ID="{4FAB9F03-446B-4198-B961-7BA74F8E2FEA}"/>
+						<Event Name="Push" ID="{CDADCBBF-203E-41EA-815D-8BB5559575FC}"/>
+						<Event Name="PickUpKey" ID="{3B1425BC-B533-403D-9379-25B0CB90E82A}"/>
+						<Event Name="Step_Wood" ID="{5C53CC8B-4900-4A08-A3FB-A091DB04939C}">
+							<ChildrenList>
+								<Action Name="" ID="{97F7B7FF-460D-41F8-B51F-03C2A2D563D3}" ShortID="685639771">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wood_step" ID="{EE51332A-2EBB-4AF7-9B11-60F458BF4C97}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Props" ID="{2E3496EB-5848-42E3-9B10-F832B929D418}" ShortID="32087978">
+					<ChildrenList>
+						<Folder Name="Button" ID="{0D76AAB3-DD89-4867-9EEA-4D3A26851D3E}" ShortID="170811410">
+							<ChildrenList>
+								<Event Name="Button_press" ID="{613C63F7-8040-4BF8-A2F6-CEAA2932A432}"/>
+								<Event Name="Button_release" ID="{8C479C75-3AC1-4F8D-9884-64F9531C7570}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fire" ID="{B46DB65E-8129-4AE3-B2F7-A690536EF179}" ShortID="361378316">
+							<ChildrenList>
+								<Event Name="Torch" ID="{8670C1D8-8730-45CD-A232-B5A910FD0973}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environmental" ID="{D8E04279-024B-42B7-AC73-8F058AF23F74}" ShortID="742045797">
+					<ChildrenList>
+						<Event Name="Overworld_soudfloor" ID="{525609C2-B660-4BE3-ACB9-FC9B5D5060EC}">
+							<ChildrenList>
+								<Action Name="" ID="{E1979F78-0C87-4D40-ABED-6E16207A1E97}" ShortID="755651673">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soundfloor1" ID="{7453B2E9-975D-47F5-9A93-3C3A5C23314D}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Room_soudfloor" ID="{2C92A90D-5040-4491-A622-FFB4D5BA83E4}">
+							<ChildrenList>
+								<Action Name="" ID="{04BC8DDE-E317-460E-AB0F-6CA4A1483166}" ShortID="850426457">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soundfloor2" ID="{91D5051D-2966-44CD-BD8B-B84BEE28A6F5}" WorkUnitID="{5938D91A-FE7F-41C1-BA70-449617F47D10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

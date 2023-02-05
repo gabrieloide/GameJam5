@@ -22,23 +22,80 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{7E0CD66D-B439-EDDC-AA3C-F8AD5122652F}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{55C10592-8E9A-7093-6A84-D9905FADFC8C}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
-				<File Id="439444282" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Mario_test.wav</ShortName>
-					<CachePath>SFX/Mario_test_10C4C929.wem</CachePath>
+				<File Id="48862275" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w.wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w_10C4C929.wem</CachePath>
+				</File>
+				<File Id="55381464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(4).wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(4)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="184986566" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(3).wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(3)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="225487845" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP.wav</ShortName>
+					<CachePath>SFX/AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP_10C4C929.wem</CachePath>
+				</File>
+				<File Id="346742794" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2).wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="432825748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG.wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG_10C4C929.wem</CachePath>
+				</File>
+				<File Id="473235942" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(3).wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(3)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="684661010" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(2).wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(2)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="824042659" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMBTrop_Guatemalan Jungle_PSE_OE_apC8H.wav</ShortName>
+					<CachePath>SFX/AMBTrop_Guatemalan Jungle_PSE_OE_apC8H_10C4C929.wem</CachePath>
+				</File>
+				<File Id="857408860" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(4).wav</ShortName>
+					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(4)_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3187507146" Name="Play_Test" DurationType="OneShot" DurationMin="169.66975" DurationMax="169.66975">
+				<Event Id="3572051233" Name="Overworld_soudfloor" DurationType="OneShot" DurationMin="70.55" DurationMax="70.55">
 					<MediaRefs>
-						<MediaRef Id="439444282"/>
+						<MediaRef Id="824042659"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2340669000" Name="Room_soudfloor" DurationType="OneShot" DurationMin="100.97" DurationMax="100.97">
+					<MediaRefs>
+						<MediaRef Id="225487845"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3234882844" Name="Step_Grass" DurationType="OneShot" DurationMin="0.30859724" DurationMax="0.47207606">
+					<MediaRefs>
+						<MediaRef Id="184986566"/>
+						<MediaRef Id="346742794"/>
+						<MediaRef Id="432825748"/>
+						<MediaRef Id="857408860"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1041114565" Name="Step_Wood" DurationType="OneShot" DurationMin="0.5054652" DurationMax="0.64126354">
+					<MediaRefs>
+						<MediaRef Id="48862275"/>
+						<MediaRef Id="55381464"/>
+						<MediaRef Id="473235942"/>
+						<MediaRef Id="684661010"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7F4F418D-BC23-FB8F-C744-3BA685247181}</FileHash>
+	<FileHash>{BBB0FF7D-C238-F982-2A95-D8849E04A3C3}</FileHash>
 </SoundBanksInfo>
