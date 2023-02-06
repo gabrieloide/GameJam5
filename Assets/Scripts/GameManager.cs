@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public int indexFamilyState;
     public bool hasKey;
     public Transform StartPosLevel;
+    public bool MoveCamera;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
         playerController = FindObjectOfType<PlayerController>();
+        MenuManager.instance.AnimationIn();
         tableFamily.Add(0, FamilyState.Dad );
         tableFamily.Add(1,FamilyState.Mom );
         tableFamily.Add(2,FamilyState.Son );
