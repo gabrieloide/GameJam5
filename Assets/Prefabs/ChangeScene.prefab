@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c74a8c9b10649448c9e168dc0f466e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: Room3
 --- !u!65 &3763189163997069010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54,11 +55,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3763189163997069008}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.41617107, y: 1, z: 0.9999559}
-  m_Center: {x: -0.12773752, y: 0, z: 0.229056}
+  m_Size: {x: 0.41617107, y: 1, z: 2.7685528}
+  m_Center: {x: -0.12773752, y: 0, z: -0.30475974}
 --- !u!54 &3763189163997069009
 Rigidbody:
   m_ObjectHideFlags: 0

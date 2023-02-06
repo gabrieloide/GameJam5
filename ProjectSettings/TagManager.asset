@@ -7,6 +7,7 @@ TagManager:
   - Activator
   - Bullet
   - Hole
+  - Pot
   layers:
   - Default
   - TransparentFX

@@ -783,6 +783,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  shoot: 0
+  takePot: 0
 --- !u!54 &8211382406126547112
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -819,6 +821,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &5247927192756961006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211382406126547116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a80713b6596aa498304e3a61b0cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capsuleCollider: {fileID: 0}
+  Hole:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8211382406498248377
 GameObject:
   m_ObjectHideFlags: 0
