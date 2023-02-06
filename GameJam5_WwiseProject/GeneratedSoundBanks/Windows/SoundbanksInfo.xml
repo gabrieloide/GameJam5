@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{43AF9A86-F2AB-F9B1-3AC5-17AD1DBD0F21}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{B289CEE8-3BBD-FC0B-CB04-58C318368A9F}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -52,7 +52,7 @@
 				</File>
 				<File Id="254577660" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FIREBurn_Torch Fire_PSE_OE_lDy8p.wav</ShortName>
-					<CachePath>SFX/FIREBurn_Torch Fire_PSE_OE_lDy8p_10C4C929.wem</CachePath>
+					<CachePath>SFX/FIREBurn_Torch Fire_PSE_OE_lDy8p_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="346742794" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2).wav</ShortName>
@@ -144,7 +144,7 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2837384057" Name="Stop_Music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1904864137" Name="Torch" DurationType="OneShot" DurationMin="62.304" DurationMax="62.304">
+				<Event Id="1904864137" Name="Torch" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="254577660"/>
 					</MediaRefs>
@@ -152,5 +152,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64FBF8FA-DAD0-3E7D-424B-7BB881528BC6}</FileHash>
+	<FileHash>{4F6EA22F-2D1A-3D68-DCBF-DCD7DD2F5A62}</FileHash>
 </SoundBanksInfo>
