@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C138A488-D81D-4660-D3FE-EF05F2B62A64}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{EB0CD771-C9DA-5748-523B-EF053CF22056}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -36,7 +36,7 @@
 				</File>
 				<File Id="144402165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>uin.wav</ShortName>
-					<CachePath>SFX/uin_7B2924E9.wem</CachePath>
+					<CachePath>SFX/uin_AB583EB5.wem</CachePath>
 				</File>
 				<File Id="184986566" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(3).wav</ShortName>
@@ -57,6 +57,10 @@
 				<File Id="346742794" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="350032277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drums.wav</ShortName>
+					<CachePath>SFX/Drums_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="401277444" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl.wav</ShortName>
@@ -86,10 +90,6 @@
 					<ShortName>FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(4).wav</ShortName>
 					<CachePath>SFX/FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(4)_10C4C929.wem</CachePath>
 				</File>
-				<File Id="866623255" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUSCInst_Gong No Hit_PSE_OE_0gaDU.wav</ShortName>
-					<CachePath>SFX/MUSCInst_Gong No Hit_PSE_OE_0gaDU_10C4C929.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
 				<Event Id="2698747613" Name="Button_press" DurationType="OneShot" DurationMin="0.48966667" DurationMax="0.48966667">
@@ -102,11 +102,6 @@
 						<MediaRef Id="207588672"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="685410454" Name="Gong" DurationType="OneShot" DurationMin="8.63175" DurationMax="8.63175">
-					<MediaRefs>
-						<MediaRef Id="866623255"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="3833651337" Name="Jump" DurationType="OneShot" DurationMin="0.68001616" DurationMax="0.8972867">
 					<MediaRefs>
 						<MediaRef Id="144402165"/>
@@ -115,6 +110,11 @@
 				<Event Id="3572051233" Name="Overworld_soudfloor" DurationType="OneShot" DurationMin="70.55" DurationMax="70.55">
 					<MediaRefs>
 						<MediaRef Id="824042659"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="350032277"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2340669000" Name="Room_soudfloor" DurationType="OneShot" DurationMin="100.97" DurationMax="100.97">
@@ -151,5 +151,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D7DEA6B0-4338-6E1D-161D-E885BC6870A7}</FileHash>
+	<FileHash>{C74491FE-A4A0-FFB2-DA8B-D0EE977BC43F}</FileHash>
 </SoundBanksInfo>

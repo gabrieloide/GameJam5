@@ -15,9 +15,9 @@ namespace AK
     {
         static const AkUniqueID BUTTON_PRESS = 2698747613U;
         static const AkUniqueID DOOR_OPEN = 535830432U;
-        static const AkUniqueID GONG = 685410454U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID OVERWORLD_SOUDFLOOR = 3572051233U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID ROOM_SOUDFLOOR = 2340669000U;
         static const AkUniqueID STEP_GRASS = 3234882844U;
         static const AkUniqueID STEP_WOOD = 1041114565U;
