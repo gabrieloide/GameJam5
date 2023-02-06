@@ -11,7 +11,7 @@ public class FamilyAbility : MonoBehaviour
     {
         playerController = FindObjectOfType<PlayerController>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         FamilyAbilities();
     }
@@ -44,14 +44,14 @@ public class FamilyAbility : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.Mouse0) && playerController.takePot)
                     {
-                        playerController.takePot = false;
                         playerController.anim.SetTrigger("PickUp");
                         FindObjectOfType<PotMovement>().Pot(transform, playerController.LastPosition + new Vector3(0, 1f, 0));
                     }
-                    if (Input.GetKeyUp(KeyCode.Mouse0) && !playerController.takePot)
+                    if (Input.GetKeyUp(KeyCode.Mouse0) && playerController.takePot)
                     {
-                        
-                        FindObjectOfType<PotMovement>().Pot(transform, playerController.LastPosition + new Vector3(1, 0f, 0));
+                        playerController.takePot = false;
+                        FindObjectOfType<PotMovement>().Pot(FindObjectOfType<PotMovement>().newParent, playerController.LastPosition + 
+                            new Vector3(playerController.moveInput.x, 0f, 0));
                     }
 
                 }
