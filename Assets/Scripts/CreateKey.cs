@@ -7,7 +7,7 @@ public class CreateKey : MonoBehaviour
     public bool canGiveKey;
     private void Update()
     {
-        if (canGiveKey && Input.GetKeyDown(KeyCode.J))
+        if (canGiveKey && Input.GetKeyDown(KeyCode.Mouse0))
         {
             GameManager.instance.hasKey = true;
         }
