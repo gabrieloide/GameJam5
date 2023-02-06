@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID ROOM_SOUDFLOOR = 2340669000U;
         static const AkUniqueID STEP_GRASS = 3234882844U;
         static const AkUniqueID STEP_WOOD = 1041114565U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID TORCH = 1904864137U;
     } // namespace EVENTS
 

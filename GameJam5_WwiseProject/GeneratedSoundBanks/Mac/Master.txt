@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1904864137	Torch			\Default Work Unit\Props\Fire\Torch	
 	2340669000	Room_soudfloor			\Default Work Unit\Environmental\Room_soudfloor	
 	2698747613	Button_press			\Default Work Unit\Props\Button\Button_press	
+	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
 	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
 	3234882844	Step_Grass			\Default Work Unit\Player\Step_Grass	
 	3572051233	Overworld_soudfloor			\Default Work Unit\Environmental\Overworld_soudfloor	
@@ -15,12 +16,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	144402165	jump	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\uin_AB583EB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\Jump\jump		136860
 	184986566	grass_step_01	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Grass\grass_step\grass_step_01		37292
 	207588672	Door_Open	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\DOORGate_Miscellaneous-Fence Gate Wood Close 03_AKB00M_Doors_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Doors\Door_Open		382436
-	225487845	Soundfloor2	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental\Rooms\Rooms\Soundfloor\Soundfloor2		9693216
+	225487845	Soundfloor2	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\AMBTrop_Guatemalan Jungle_PSE_OE_TlwsP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental\Rooms\Rooms\Soundfloor\Soundfloor2		9693216
 	254577660	Torch	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\FIREBurn_Torch Fire_PSE_OE_lDy8p_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Torch\Torch		11962464
 	346742794	grass_step	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG(2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Grass\grass_step\grass_step		32440
 	350032277	Drums	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\Drums_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Town Theme\Drums		7761004
 	401277444	Button_press	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\DOORWood_Trap Door Opens And Closes_PSE_OE_XkzPl_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Button\Button_press		47104
-	425850747	Soundfloor3	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental\Rooms\Rooms\Soundfloor\Soundfloor3		11315296
+	425850747	Soundfloor3	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\AMBMisc_Celestial Dungeon Low Distant Hum_PSE_LV_vwlmQ_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental\Rooms\Rooms\Soundfloor\Soundfloor3		11315296
 	432825748	grass_step_03	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\FOLYFeet_Footsteps Grass 01_PSE_OE_9CXrG_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Grass\grass_step\grass_step_03		41606
 	473235942	wood_step_01	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Wood\wood_step\wood_step_01		57336
 	684661010	wood_step	C:\Users\Carlos\GameJam5\GameJam5_WwiseProject\.cache\Mac\SFX\FOLYFeet_Footsteps Wood 03_PSE_OS_tNO8w(2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Wood\wood_step\wood_step		52284
