@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public bool canPass;
     public AK.Wwise.Event Jump;
     public bool shoot;
-
+    public bool takePot;
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
@@ -53,10 +53,8 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
-        if (GameManager.instance.MoveCamera)
-        {
             FindObjectOfType<CameraMovement>().CameraM(transform);
-        }
+        
     }
     private void OnTriggerEnter(Collider collision)
     {
@@ -64,6 +62,10 @@ public class PlayerController : MonoBehaviour
         {
             shoot = false;
             canPass = true;
+        }
+        if (collision.gameObject.CompareTag("Pot"))
+        {
+            takePot = true;
         }
     }
     private void OnTriggerExit(Collider collision)
@@ -73,6 +75,10 @@ public class PlayerController : MonoBehaviour
             shoot = true;
             canPass = false;
         }
+        if (collision.gameObject.CompareTag("Pot"))
+        {
+            takePot = false;
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -80,6 +86,7 @@ public class PlayerController : MonoBehaviour
         {
             canMoveBox = true;
         }
+
     }
     private void OnCollisionExit(Collision collision)
     {
@@ -87,5 +94,6 @@ public class PlayerController : MonoBehaviour
         {
             canMoveBox = false;
         }
+
     }
 }
