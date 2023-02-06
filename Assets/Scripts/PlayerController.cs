@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     public bool canPass;
     public AK.Wwise.Event Jump;
 
-
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
@@ -51,6 +50,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
+        FindObjectOfType<CameraMovement>().CameraM(transform);
     }
     void FamilyAbilities()
     {
@@ -145,9 +145,4 @@ public class PlayerController : MonoBehaviour
             
         }
     }
-    public void asdf()
-    {
-
-    }
-
 }
