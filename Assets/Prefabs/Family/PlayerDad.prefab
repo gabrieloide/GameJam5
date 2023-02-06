@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8211382404604182168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.041, y: 0.517, z: -0.056}
-  m_LocalScale: {x: 0.74911, y: 1, z: 1}
+  m_LocalPosition: {x: 0.051, y: 0.568, z: -0.056}
+  m_LocalScale: {x: 0.74911, y: 0.80161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8211382406498248374}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 964166055
   m_SortingLayer: -2
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 67d01eb941746104087cae10917f0fe7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -772,8 +772,8 @@ MonoBehaviour:
   groundPoint: {fileID: 8211382406528086476}
   anim: {fileID: 8211382404931049653}
   show: {fileID: 8211382406498248375}
-  fowards: {fileID: 21300000, guid: 783a85128286a78439ea2806b070339b, type: 3}
-  Backwards: {fileID: 21300000, guid: 1dab5733881dfca42b10c6ca74b49c72, type: 3}
+  Fowards: {fileID: 21300000, guid: 783a85128286a78439ea2806b070339b, type: 3}
+  ForeheadM: {fileID: 21300000, guid: 39a643c11e9f53d43b7fef3a7a8c86d0, type: 3}
   LastPosition: {x: 0, y: 0, z: 0}
   canMoveBox: 0
   Bullet: {fileID: 0}
