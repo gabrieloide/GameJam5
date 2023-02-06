@@ -8849,7 +8849,7 @@ GameObject:
   - component: {fileID: 1693158096}
   - component: {fileID: 1693158095}
   - component: {fileID: 1693158097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hole
   m_TagString: Hole
   m_Icon: {fileID: 0}

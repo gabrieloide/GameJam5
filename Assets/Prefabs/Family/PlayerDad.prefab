@@ -656,9 +656,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2.378539
+  m_Height: 3.5229015
   m_Direction: 1
-  m_Center: {x: 0, y: 0.6892697, z: 0.000000033429632}
+  m_Center: {x: 0, y: 1.2614509, z: 0.00000036623376}
 --- !u!1 &8211382406126547116
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +783,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  shoot: 0
 --- !u!54 &8211382406126547112
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -831,6 +832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a80713b6596aa498304e3a61b0cd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hole:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8211382406498248377
 GameObject:
   m_ObjectHideFlags: 0

@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 593144834835970208}
   - component: {fileID: 593144834835970209}
   - component: {fileID: 593144834835970214}
+  - component: {fileID: 4422457852275309733}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -380,6 +381,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &4422457852275309733
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593144834835970212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 3.5229015
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.2614509, z: 0.00000036623376}
 --- !u!1 &593144835204045544
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +599,6 @@ GameObject:
   m_Component:
   - component: {fileID: 593144835447901843}
   - component: {fileID: 593144835447901840}
-  - component: {fileID: 593144835447901841}
   - component: {fileID: 593144835447901846}
   - component: {fileID: 593144835447901847}
   - component: {fileID: 593144835447901844}
@@ -666,20 +680,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!136 &593144835447901841
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593144835447901845}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.28128746
-  m_Height: 1.0505848
-  m_Direction: 1
-  m_Center: {x: -0.01000002, y: 0.24725008, z: -0.07748881}
 --- !u!114 &593144835447901846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,6 +713,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  shoot: 0
 --- !u!54 &593144835447901847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -761,6 +762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a80713b6596aa498304e3a61b0cd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hole:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &593144835630655826
 GameObject:
   m_ObjectHideFlags: 0

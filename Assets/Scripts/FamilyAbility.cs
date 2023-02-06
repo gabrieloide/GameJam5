@@ -5,6 +5,7 @@ using UnityEngine;
 public class FamilyAbility : MonoBehaviour
 {
     PlayerController playerController;
+    public CapsuleCollider capsuleCollider;
     [SerializeField]LayerMask Hole;
     private void Start()
     {
@@ -13,11 +14,6 @@ public class FamilyAbility : MonoBehaviour
     private void Update()
     {
         FamilyAbilities();
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawCube(transform.position, new Vector3(1, 1, 1));
     }
     public void FamilyAbilities()
     {
@@ -46,16 +42,38 @@ public class FamilyAbility : MonoBehaviour
             case FamilyState.Mom:
                 break;
             case FamilyState.Son:
-                if (Input.GetKeyDown(KeyCode.J) && GameManager.instance.familyState == FamilyState.Son)
+                if (GameManager.instance.familyState == FamilyState.Son)
                 {
-                    playerController.anim.SetTrigger("Shoot");
-                    float d = Input.GetAxisRaw("Vertical");
-                    if (playerController.moveInput.x != 0f || d != 0)
+                    if (Input.GetKeyDown(KeyCode.J))
                     {
-                        GameObject b = Instantiate(playerController.Bullet, playerController.bulletCreation.position, Quaternion.identity);
-                        Rigidbody rb = b.GetComponent<Rigidbody>();
-                        rb.AddForce(new Vector3(playerController.moveInput.x, 0, Input.GetAxisRaw("Vertical")) * 5, ForceMode.Impulse);
-                        Destroy(b, 2);
+                        if (playerController.shoot)
+                        {
+                            playerController.anim.SetTrigger("Shoot");
+                            float d = Input.GetAxisRaw("Vertical");
+                            if (playerController.moveInput.x != 0f || d != 0)
+                            {
+                                GameObject b = Instantiate(playerController.Bullet, playerController.bulletCreation.position, Quaternion.identity);
+                                Rigidbody rb = b.GetComponent<Rigidbody>();
+                                rb.AddForce(new Vector3(playerController.moveInput.x, 0, Input.GetAxisRaw("Vertical")) * 5, ForceMode.Impulse);
+                                Destroy(b, 2);
+                            }
+                        }
+                        if (playerController.canPass)
+                        {
+                            capsuleCollider.height = 1;
+                            capsuleCollider.center = new Vector3(0,-1.330288e-07f, 3.547435e-07f);
+                            playerController.anim.SetBool("Crouch", true);
+                        }
+                        else
+                        {
+                            playerController.anim.SetBool("Crouch", false);
+                        }
+                    }
+                    if (Input.GetKeyUp(KeyCode.J))
+                    {
+                        playerController.anim.SetBool("Crouch", false);
+                        capsuleCollider.height = 3.522902f;
+                        capsuleCollider.center = new Vector3(0, 1.261451f, 3.662338e-07f);
                     }
                 }
                 break;

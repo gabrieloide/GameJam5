@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public Transform bulletCreation;
     public bool canPass;
     public AK.Wwise.Event Jump;
+    public bool shoot;
 
     void Update()
     {
@@ -57,7 +58,22 @@ public class PlayerController : MonoBehaviour
             FindObjectOfType<CameraMovement>().CameraM(transform);
         }
     }
-
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Hole"))
+        {
+            shoot = false;
+            canPass = true;
+        }
+    }
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Hole"))
+        {
+            shoot = true;
+            canPass = false;
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Activator"))
