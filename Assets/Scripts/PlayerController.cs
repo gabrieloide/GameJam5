@@ -53,7 +53,10 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
+        if (GameManager.instance.MoveCamera)
+        {
             FindObjectOfType<CameraMovement>().CameraM(transform);
+        }
         
     }
     private void OnTriggerEnter(Collider collision)
