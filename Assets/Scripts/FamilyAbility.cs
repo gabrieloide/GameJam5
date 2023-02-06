@@ -23,14 +23,14 @@ public class FamilyAbility : MonoBehaviour
                 if (GameManager.instance.familyState == FamilyState.Dad)
                 {
                     playerController.anim.SetBool("Push", playerController.canMoveBox);
-                    if (Input.GetKeyDown(KeyCode.J))
+                    if (Input.GetKeyDown(KeyCode.Mouse0))
                     {
                         if (playerController.canMoveBox)
                         {
                             FindObjectOfType<BoxMovement>().MoveBox(transform);
                         }
                     }
-                    if (Input.GetKeyUp(KeyCode.J))
+                    if (Input.GetKeyUp(KeyCode.Mouse0))
                     {
                         playerController.canMoveBox = false;
 
@@ -40,11 +40,26 @@ public class FamilyAbility : MonoBehaviour
                 }
                 break;
             case FamilyState.Mom:
+                if (GameManager.instance.familyState == FamilyState.Mom)
+                {
+                    if (Input.GetKeyDown(KeyCode.Mouse0) && playerController.takePot)
+                    {
+                        playerController.takePot = false;
+                        playerController.anim.SetTrigger("PickUp");
+                        FindObjectOfType<PotMovement>().Pot(transform, playerController.LastPosition + new Vector3(0, 1f, 0));
+                    }
+                    if (Input.GetKeyUp(KeyCode.Mouse0) && !playerController.takePot)
+                    {
+                        
+                        FindObjectOfType<PotMovement>().Pot(transform, playerController.LastPosition + new Vector3(1, 0f, 0));
+                    }
+
+                }
                 break;
             case FamilyState.Son:
                 if (GameManager.instance.familyState == FamilyState.Son)
                 {
-                    if (Input.GetKeyDown(KeyCode.J))
+                    if (Input.GetKeyDown(KeyCode.Mouse0))
                     {
                         if (playerController.shoot)
                         {
@@ -69,7 +84,7 @@ public class FamilyAbility : MonoBehaviour
                             playerController.anim.SetBool("Crouch", false);
                         }
                     }
-                    if (Input.GetKeyUp(KeyCode.J))
+                    if (Input.GetKeyUp(KeyCode.Mouse0))
                     {
                         playerController.anim.SetBool("Crouch", false);
                         capsuleCollider.height = 3.522902f;

@@ -714,6 +714,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   shoot: 0
+  takePot: 0
 --- !u!54 &593144835447901847
 Rigidbody:
   m_ObjectHideFlags: 0
