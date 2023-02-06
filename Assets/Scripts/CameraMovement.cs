@@ -4,20 +4,10 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public GameObject PlayerPosition;
-
     public float time;
-    private void Start()
+    public void CameraM(Transform Pos)
     {
-        PlayerPosition = GameObject.Find("CameraPosition");
-    }
-    private void FixedUpdate()
-    {
-        transform.SetParent(PlayerPosition.transform);
-        if (FindObjectOfType<PlayerController>().moveInput.x > 0)
-        {
-            transform.localScale = new Vector3(-1,1,1);
-        }
-        
+        Vector3 offset = new Vector3(0, 6, -5.84f);
+        transform.position = Vector3.Lerp(transform.position, Pos.position + offset, time * Time.deltaTime);
     }
 }
