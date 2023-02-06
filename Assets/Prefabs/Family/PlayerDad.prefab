@@ -782,7 +782,7 @@ MonoBehaviour:
   Jump:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2530fdc2c9bab914a91ce6c540518c4a, type: 2}
   shoot: 0
   takePot: 0
 --- !u!54 &8211382406126547112

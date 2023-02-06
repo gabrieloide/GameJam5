@@ -321,6 +321,11 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -458,6 +463,13 @@
 						<Folder Name="Rooms" ID="{ACA005AB-3D4A-4662-B79C-46306EA0FCF2}" ShortID="243621578">
 							<ChildrenList>
 								<ActorMixer Name="Rooms" ID="{0035B224-611C-490A-9587-B9963F2E6950}" ShortID="1048114833">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
@@ -470,6 +482,9 @@
 										<Folder Name="Soundfloor" ID="{ADA0DCD0-2DF9-47D2-87F9-CCBAF45F6DAA}" ShortID="605425525">
 											<ChildrenList>
 												<Sound Name="Soundfloor2" ID="{91D5051D-2966-44CD-BD8B-B84BEE28A6F5}" ShortID="740951907">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
@@ -492,6 +507,9 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Soundfloor3" ID="{C4E51D7D-85FC-43DF-9595-71F24C7BD6FE}" ShortID="673321324">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D78CF1CC-1AB0-4D65-85B2-31D418133869}"/>
