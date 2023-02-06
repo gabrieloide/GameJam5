@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44941384, g: 0.6548123, b: 0.4228395, a: 1}
+  m_IndirectSpecularColor: {r: 0.44947484, g: 0.6544951, b: 0.42290986, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27879,7 +27879,7 @@ PrefabInstance:
       objectReference: {fileID: 690729937}
     - target: {fileID: 7628530316061203026, guid: e0d9185ca432da64ab66b3cc59675f96, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: ShowPanel
       objectReference: {fileID: 0}
     - target: {fileID: 7628530316061203029, guid: e0d9185ca432da64ab66b3cc59675f96, type: 3}
       propertyPath: m_Pivot.x
