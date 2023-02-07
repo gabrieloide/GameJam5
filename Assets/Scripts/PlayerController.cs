@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public Animator anim;
     public SpriteRenderer show;
-    public Sprite fowards, Backwards;
+    public Sprite Fowards, ForeheadM;
     public Vector3 LastPosition;
     public bool canMoveBox;
     public GameObject Bullet;
@@ -46,9 +46,9 @@ public class PlayerController : MonoBehaviour
         Vector3 n = moveInput.x < -0.1f  ? transform.localScale = new Vector3(-1, 1, 1) : transform.localScale = new Vector3(1, 1, 1);
 
         if (moveInput.y > 0.1)
-            show.sprite = Backwards;
+            show.sprite = ForeheadM;
         else
-            show.sprite = fowards;
+            show.sprite = Fowards;
     }
     private void FixedUpdate()
     {

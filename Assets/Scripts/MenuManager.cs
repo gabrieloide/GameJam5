@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
     public void AnimationIn()
     {
 
-        LeanTween.moveX(Fade, -550, 1f);
+        LeanTween.moveX(Fade, -5500, 1f);
             
     }
     void Play()

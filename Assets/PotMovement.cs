@@ -12,7 +12,7 @@ public class PotMovement : MonoBehaviour
         if (FindObjectOfType<PlayerController>().takePot == false)
         {
             transform.SetParent(newParent);
-
         }
+        //FindObjectOfType<PlayerController>().takePot = false;
     }
 }
