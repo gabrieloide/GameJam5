@@ -635,8 +635,8 @@ MonoBehaviour:
   groundPoint: {fileID: 1981432821648319632}
   anim: {fileID: 1981432821387662674}
   show: {fileID: 1981432821354868555}
-  fowards: {fileID: 21300000, guid: 7162b78858083d64fb54669e7df94f7a, type: 3}
-  Backwards: {fileID: 21300000, guid: f862356d52e5bb541a39353ef7a7faf4, type: 3}
+  Fowards: {fileID: 0}
+  ForeheadM: {fileID: 0}
   LastPosition: {x: 0, y: 0, z: 0}
   canMoveBox: 0
   Bullet: {fileID: 6636738776079944033, guid: 8fa54200ed96f54499fb11fb1c8fe7df, type: 3}
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1981432822165978451}
   - component: {fileID: 1981432822165978448}
   m_Layer: 0
-  m_Name: Hair
+  m_Name: Hair2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -773,7 +773,7 @@ SpriteRenderer:
   m_SortingLayerID: 964166055
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0beca6e9fa25bc248a5152de83e606e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67d01eb941746104087cae10917f0fe7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
